@@ -1,0 +1,22 @@
+<div>
+  <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+    <input
+      type="text"
+      name="userName"
+      placeholder="userName"
+      formControlName="firstName"
+    />
+
+    <input
+      type="text"
+      name="lastName"
+      placeholder="last Name"
+      formControlName="lastName"
+    />
+    <br />
+    <br />
+    <input type="submit" value="Click here" />
+  </form>
+
+  <p></p>
+</div>
